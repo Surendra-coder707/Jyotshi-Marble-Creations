@@ -1,0 +1,920 @@
+/* =========================================================
+   JYOTSHI MARBLE CREATIONS
+   CONTACT / INQUIRY PAGE
+========================================================= */
+
+.inquiry-page {
+    min-height: calc(100vh - 100px);
+
+    padding: 90px 0 80px;
+
+    background:
+        radial-gradient(
+            circle at 10% 20%,
+            rgba(212, 175, 55, 0.10),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 90% 80%,
+            rgba(120, 100, 70, 0.08),
+            transparent 30%
+        ),
+        #f4f0e8;
+}
+
+
+/* =========================================================
+   MAIN GRID
+========================================================= */
+
+.inquiry-container {
+    width: min(1150px, calc(100% - 40px));
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 0.8fr 1.2fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+
+/* =========================================================
+   LEFT INTRO
+========================================================= */
+
+.inquiry-intro {
+    padding: 20px 0;
+}
+
+.inquiry-intro .eyebrow {
+    color: #a47d1d;
+
+    letter-spacing: 4px;
+
+    font-size: 11px;
+
+    font-weight: 800;
+}
+
+.inquiry-intro h1 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: clamp(52px, 6vw, 82px);
+
+    line-height: 0.92;
+
+    color: #181614;
+
+    margin: 22px 0;
+}
+
+.gold-text {
+    color: #b58b24;
+}
+
+.inquiry-intro > p {
+    max-width: 520px;
+
+    color: #69635b;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   DIRECT CONTACT
+========================================================= */
+
+.direct-contact {
+    margin-top: 35px;
+
+    display: grid;
+
+    gap: 12px;
+
+    max-width: 380px;
+}
+
+.direct-contact a {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 14px 17px;
+
+    text-decoration: none;
+
+    color: #25221e;
+
+    background: rgba(255,255,255,0.65);
+
+    border: 1px solid rgba(120,100,70,0.15);
+
+    border-radius: 12px;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.direct-contact a:hover {
+    transform: translateX(5px);
+
+    border-color: rgba(212,175,55,0.65);
+
+    box-shadow:
+        0 10px 25px rgba(40,30,20,0.08);
+}
+
+.direct-contact a > i {
+    width: 42px;
+
+    height: 42px;
+
+    border-radius: 50%;
+
+    display: grid;
+
+    place-items: center;
+
+    background: #191714;
+
+    color: #d4af37;
+
+    font-size: 17px;
+}
+
+.direct-contact a:nth-child(2) > i {
+    background: #25d366;
+
+    color: #fff;
+}
+
+.direct-contact span {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 2px;
+
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+.direct-contact small {
+    color: #8a8379;
+
+    font-size: 11px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   FORM CARD
+========================================================= */
+
+.inquiry-card {
+    position: relative;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,0.96),
+            rgba(250,247,240,0.94)
+        );
+
+    border: 1px solid rgba(120,100,70,0.18);
+
+    border-radius: 24px;
+
+    padding: 42px;
+
+    box-shadow:
+        0 25px 70px rgba(45,35,25,0.12);
+
+    overflow: hidden;
+}
+
+
+/* GOLD DECORATIVE LINE */
+
+.inquiry-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 4px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #d4af37,
+            #f0d98a,
+            #d4af37,
+            transparent
+        );
+}
+
+
+/* DECORATIVE CIRCLE */
+
+.inquiry-card::after {
+    content: "";
+
+    position: absolute;
+
+    width: 180px;
+    height: 180px;
+
+    right: -90px;
+    bottom: -90px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(212,175,55,0.15);
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   FORM HEADING
+========================================================= */
+
+.inquiry-card-heading {
+    margin-bottom: 28px;
+}
+
+.inquiry-card-heading .eyebrow {
+    color: #a47d1d;
+
+    letter-spacing: 3px;
+
+    font-size: 10px;
+
+    font-weight: 800;
+}
+
+.inquiry-card-heading h2 {
+    font-family: "Cormorant Garamond", serif;
+
+    color: #181614;
+
+    font-size: 48px;
+
+    line-height: 1;
+
+    margin: 8px 0 0;
+}
+
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.inquiry-form {
+    display: grid;
+
+    gap: 18px;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+.form-row {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 16px;
+}
+
+.form-group {
+    display: grid;
+
+    gap: 7px;
+}
+
+.form-group label {
+    color: #37322c;
+
+    font-size: 12px;
+
+    font-weight: 800;
+}
+
+.form-group label span {
+    color: #b58b24;
+}
+
+
+/* =========================================================
+   INPUTS
+========================================================= */
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 13px 14px;
+
+    border-radius: 9px;
+
+    border: 1px solid #ddd5c8;
+
+    background: #fffdf9;
+
+    color: #26221e;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 13px;
+
+    outline: none;
+
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+}
+
+.form-group input:hover,
+.form-group select:hover,
+.form-group textarea:hover {
+    border-color: #cdbb91;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #d4af37;
+
+    background: #fff;
+
+    box-shadow:
+        0 0 0 3px rgba(212,175,55,0.12);
+}
+
+.form-group textarea {
+    min-height: 125px;
+
+    resize: vertical;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #aaa39a;
+}
+
+
+/* =========================================================
+   SUBMIT BUTTON
+========================================================= */
+
+.inquiry-submit {
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 11px;
+
+    padding: 15px 20px;
+
+    margin-top: 4px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    background:
+        linear-gradient(
+            135deg,
+            #171513,
+            #302b24
+        );
+
+    color: #fff;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.5px;
+
+    box-shadow:
+        0 10px 25px rgba(20,18,15,0.18);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.inquiry-submit i:first-child {
+    color: #d4af37;
+}
+
+.inquiry-submit i:last-child {
+    color: #d4af37;
+
+    transition: transform 0.3s ease;
+}
+
+.inquiry-submit:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 15px 30px rgba(20,18,15,0.25);
+}
+
+.inquiry-submit:hover i:last-child {
+    transform: translateX(5px);
+}
+
+
+/* =========================================================
+   SUCCESS MESSAGE
+========================================================= */
+
+.form-success {
+    display: none;
+
+    padding: 13px 15px;
+
+    border-radius: 9px;
+
+    background: #edf8ef;
+
+    border: 1px solid #b8dfbf;
+
+    color: #286b35;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+.form-success.show {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+.form-success i {
+    font-size: 17px;
+}
+
+
+/* =========================================================
+   FOOTER - COMPACT
+========================================================= */
+
+.inquiry-page + .footer {
+    padding-top: 22px;
+}
+
+.inquiry-page + .footer .footer-bottom {
+    border-top: 1px solid rgba(212,175,55,0.22);
+
+    padding-top: 20px;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .inquiry-container {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+
+        width: min(650px, calc(100% - 32px));
+    }
+
+    .inquiry-intro {
+        text-align: center;
+    }
+
+    .inquiry-intro > p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .direct-contact {
+        margin-left: auto;
+        margin-right: auto;
+
+        text-align: left;
+    }
+
+    .inquiry-card {
+        padding: 32px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE SMALL
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .inquiry-page {
+        padding: 60px 0;
+    }
+
+    .inquiry-container {
+        width: calc(100% - 24px);
+
+        gap: 30px;
+    }
+
+    .inquiry-intro h1 {
+        font-size: 53px;
+
+        line-height: 0.98;
+    }
+
+    .inquiry-intro > p {
+        font-size: 14px;
+    }
+
+    .inquiry-card {
+        padding: 25px 18px;
+
+        border-radius: 18px;
+    }
+
+    .inquiry-card-heading h2 {
+        font-size: 40px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+    .direct-contact {
+        width: 100%;
+    }
+
+    .direct-contact a {
+        padding: 12px;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .inquiry-intro h1 {
+        font-size: 46px;
+    }
+
+    .inquiry-card {
+        padding: 22px 15px;
+    }
+
+    .inquiry-card-heading h2 {
+        font-size: 36px;
+    }
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+.inquiry-submit:focus-visible,
+.direct-contact a:focus-visible,
+.form-group input:focus-visible,
+.form-group select:focus-visible,
+.form-group textarea:focus-visible {
+    outline: 2px solid #d4af37;
+
+    outline-offset: 3px;
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .direct-contact a,
+    .inquiry-submit,
+    .inquiry-submit i {
+        transition: none;
+    }
+}
+/* =========================================
+   NAVIGATION - PREMIUM BOX STYLE
+   ========================================= */
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Normal Navigation Box */
+.nav-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 11px 20px;
+    min-width: 82px;
+
+    background: #24211e;
+    color: #f4efe7 !important;
+
+    border: 1px solid rgba(180, 145, 80, 0.35);
+    border-radius: 8px;
+
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+/* Hover */
+.nav-link:hover {
+    background: #d6b56d;
+    color: #211e1b !important;
+
+    border-color: #d6b56d;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 7px 18px rgba(0, 0, 0, 0.18),
+        0 0 14px rgba(214, 181, 109, 0.22);
+}
+
+/* Active Contact */
+.nav-link.active {
+    background: #d6b56d;
+    color: #211e1b !important;
+
+    border-color: #c49b4b;
+
+    box-shadow:
+        0 5px 16px rgba(0, 0, 0, 0.16),
+        0 0 12px rgba(214, 181, 109, 0.18);
+}
+
+/* Active Hover */
+.nav-link.active:hover {
+    background: #c49b4b;
+    color: #171513 !important;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    .nav {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+    }
+
+    .nav-link {
+        width: 100%;
+        min-width: auto;
+        padding: 13px 18px;
+        border-radius: 8px;
+    }
+}
+/* =========================================
+   PREMIUM JYOTSHI LOGO
+   ========================================= */
+
+.logo {
+    position: relative;
+
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    text-decoration: none;
+
+    padding: 8px 14px 9px 16px;
+
+    border-left: 3px solid #b9924b;
+
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.95),
+        rgba(244, 239, 229, 0.75)
+    );
+
+    border-radius: 4px;
+
+    box-shadow:
+        0 5px 18px rgba(0, 0, 0, 0.10),
+        inset 0 1px 0 rgba(255, 255, 255, 0.9);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+}
+
+
+/* Small luxury line above logo */
+.logo::before {
+    content: "";
+
+    position: absolute;
+
+    top: 4px;
+    left: 16px;
+
+    width: 38px;
+    height: 2px;
+
+    background: linear-gradient(
+        90deg,
+        #8f6b2f,
+        #d6b56d,
+        transparent
+    );
+
+    transition: width 0.35s ease;
+}
+
+
+/* Main Brand Name */
+.logo-main {
+    display: block;
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+
+    font-size: 32px;
+    font-weight: 700;
+
+    line-height: 0.95;
+
+    letter-spacing: 4px;
+
+    color: #29241f;
+
+    text-transform: uppercase;
+
+    text-shadow:
+        0 1px 0 rgba(255, 255, 255, 0.8),
+        0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Sub Brand Name */
+.logo-sub {
+    display: block;
+
+    margin-top: 6px;
+
+    font-family: "Manrope", Arial, sans-serif;
+
+    font-size: 9px;
+    font-weight: 800;
+
+    line-height: 1;
+
+    letter-spacing: 3px;
+
+    color: #9a773b;
+
+    text-transform: uppercase;
+}
+
+
+/* Golden divider */
+.logo-sub::before {
+    content: "✦";
+
+    margin-right: 7px;
+
+    color: #b9924b;
+
+    font-size: 8px;
+}
+
+
+/* Hover Effect */
+.logo:hover {
+    transform: translateY(-2px);
+
+    border-color: #d6b56d;
+
+    box-shadow:
+        0 10px 28px rgba(0, 0, 0, 0.14),
+        0 0 18px rgba(185, 146, 75, 0.14);
+}
+
+.logo:hover::before {
+    width: 75px;
+}
+
+.logo:hover .logo-main {
+    color: #8f6b2f;
+}
+
+
+/* =========================================
+   SCROLLED HEADER
+   ========================================= */
+
+.header.scrolled .logo {
+    padding-top: 6px;
+    padding-bottom: 7px;
+}
+
+.header.scrolled .logo-main {
+    font-size: 28px;
+}
+
+.header.scrolled .logo-sub {
+    font-size: 8px;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 760px) {
+
+    .logo {
+        padding: 7px 10px 8px 12px;
+    }
+
+    .logo-main {
+        font-size: 26px;
+        letter-spacing: 3px;
+    }
+
+    .logo-sub {
+        font-size: 7px;
+        letter-spacing: 2px;
+        margin-top: 5px;
+    }
+
+    .logo-sub::before {
+        margin-right: 5px;
+        font-size: 7px;
+    }
+}
